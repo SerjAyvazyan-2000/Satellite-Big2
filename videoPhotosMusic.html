@@ -1,0 +1,795 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video from photos with music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header-body G-justify-between">
+                <a class="header-logo" href="createVideo.html">
+                    <img class="logo-desktop" src="assets/images/logo.svg" alt="">
+                    <img class="logo-mobile" src="assets/images/logoMobile.svg" alt="">
+
+                </a>
+                <div class="menu-bg"></div>
+                <nav class="menu">
+
+                    <div class="menu-content-mobile">
+                        <a class="header-logo" href="">
+                            <img src="assets/images/logo.svg" alt="">
+                        </a>
+                    </div>
+
+                    <ul class="menu-list G-flex">
+                        <li class='menu-list-item'>
+                            <a class="menu-list-link G-align-center" href="#possibilities">
+                                <span>Возможности</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-list-item">
+                            <a class="menu-list-link" href="#forWhom">Для кого</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a class="menu-list-link" href="#reviews">Отзывы</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a class="menu-list-link" href="#faq">FAQ</a>
+                        </li>
+                    </ul>
+
+                    <div class="header-mobile-actions ">
+                        <button class="btn-login btn-black ">Вход</button>
+                        <button class="btn-register btn-white  ">Регистрация</button>
+                    </div>
+
+                </nav>
+                <div class="burger">
+                    <span></span>
+                </div>
+                <div class="header-actions G-align-center">
+                    <button class="btn-login btn-black ">Вход</button>
+                    <button class="btn-register btn-white  ">Регистрация</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="music-hero-section">
+            <div class="container">
+                <div class="hero-music-body ">
+                    <div class="hero-header G-align-center">
+                        <div class="hero-header-info">
+                            <h1 class="photo-music-title hero-title">
+                                Создавайте видео <span class="desktop-text-wrap">из фото с музыкой</span>
+                            </h1>
+                            <p class="photo-music-sub-title hero-sub-title">
+                                Превратите ваши фотографии в живые <span class="desktop-text-wrap">видеоролики с музыкой <span class="mobile-text-wrap">за пару кликов</span></span>
+
+                            </p>
+                            <button class="hero-music-btn btn-gradient">Создать видео</button>
+
+                        </div>
+                        <div style="background-image: url('assets/images/animationCard2.png')"
+                             class="hero-header-picture G-image">
+                            <div id="wave-container">
+                                <canvas id="wave"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-info G-flex">
+                        <div class="hero-info-item G-column-center">
+                            <h2 class="hero-item-title">12М+</h2>
+                            <p class="hero-item-clue">Пользователей</p>
+                        </div>
+                        <div class="hero-info-item G-column-center">
+                            <h2 class="hero-item-title">50+</h2>
+                            <p class="hero-item-clue">Шаблонов</p>
+                        </div>
+                        <div class="hero-info-item G-column-center">
+                            <h2 class="hero-item-title">10+</h2>
+                            <p class="hero-item-clue">Инструментов</p>
+                        </div>
+                    </div>
+
+
+                    <div data-gif="assets/images/gif4.gif" data-img="assets/images/videoFon4.png"
+                         style="background-image: url('assets/images/videoFon4.png')" class="video-block G-image">
+                        <video class="videoPlayer" src=""></video>
+                        <div class="play-image">
+                            <img src="assets/images/play.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section class="create-videos-section ">
+            <div class="container">
+                <div class="create-videos-box ">
+                    <div class="block-header  G-column-center">
+                        <div class="create-title block-title">Основные возможности</div>
+                        <h2 class=" block-main-title">
+                            Видео, которое начинается с фото и музыки
+                        </h2>
+                    </div>
+
+                    <div class="create-photo-items G-flex">
+                        <div class="create-photo-item G-align-center">
+                            <a href="" class="create-photo-bg G-center">
+                                <div class="create-photo-icon G-flex">
+                                    <img src="assets/images/playGif.gif" alt="">
+                                </div>
+                            </a>
+                            <div class="create-photo-info ">
+                                <h3 class="create-photo-title">Создание видео с нуля</h3>
+                                <p class="create-photo-clue ">
+                                    Просто загрузите свои фото, и Satellite AI превратит их в уникальное видео с музыкой
+                                </p>
+                            </div>
+                        </div>
+                        <div class="create-photo-item G-align-center">
+                            <a href="" class="create-photo-bg G-center">
+                                <div class="create-photo-icon G-flex">
+                                    <img src="assets/images/gifActivate.gif" alt="">
+                                </div>
+                            </a>
+                            <div class="create-photo-info ">
+                                <h3 class="create-photo-title">Автоматическая анимация</h3>
+                                <p class="create-photo-clue ">
+
+                                    Фото превращаются в  <span class="text-wrap">плавные анимации</span>
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="create-photo-item G-align-center">
+                            <a class="create-photo-bg G-center">
+                                <div class="create-photo-icon G-flex">
+                                    <img src="assets/images/playGif3.gif" alt="">
+                                </div>
+                            </a>
+                            <div class="create-photo-info ">
+                                <h3 class="create-photo-title">Музыка</h3>
+                                <p class="create-photo-clue ">
+                                    Подберите или сгенерируйте <span class="mobile-text-wrap">подходящий трек для вашего видео</span>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="marquee-line-box">
+                        <div class="marquee-line-img">
+                            <img src="assets/images/marquee-line.gif" alt="">
+                        </div>
+                        <div class="marquee-line-info ">
+                            <h3 class="marquee-line-title">
+                                Satellite AI позволяет преобразовать фотографии в динамичные видеоролики с музыкой
+                            </h3>
+                            <p class="music-marquee marquee-line-sub">
+                                Выбирайте фото, добавляйте эффекты, музыку и создавайте уникальные видео за считанные минуты
+                            </p>
+                            <button class="marquee-btn btn-gradient">Попробовать</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="why-choose-section">
+            <div class="container">
+                <div class="block-header  G-column-center">
+                    <div class="create-title block-title">Преимущества</div>
+                    <h2 class="why-choose-main-title block-main-title">
+                        Почему стоит выбрать <span>Satellite AI для создания видео</span>
+                    </h2>
+                </div>
+                <div class="why-choose-items  G-flex-column">
+                    <div class="why-choose-item G-align-center">
+                        <div class="choose-item-img G-flex">
+                            <img src="assets/images/OverlayImg.jpeg" alt="">
+                        </div>
+                        <div class="choose-item-info">
+                            <h3 class="choose-info-title">Быстрое создание</h3>
+                            <p class="choose-info-clue">
+                                Воспользуйтесь автоматизированными процессами, чтобы создать видео всего за пару кликов
+                            </p>
+                            <button class="choose-btn btn-white">Создать видео</button>
+                        </div>
+
+                    </div>
+                    <div class="why-choose-item choose-reverse-item G-align-center">
+                        <div class="choose-item-info">
+                            <h3 class="choose-info-title">Идеальная синхронизация</h3>
+                            <p class="choose-info-clue">
+                                Фото и музыка идеально сочетаются друг с другом
+                            </p>
+                            <button class="choose-btn btn-white">Создать видео</button>
+                        </div>
+
+                        <div class="choose-item-img G-flex">
+                            <img src="assets/images/OverlayImg6.jpeg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="why-choose-item G-align-center">
+                        <div class="choose-scale-left choose-item-img">
+                            <img src="assets/images/OverlayImg5.jpeg" alt="">
+                        </div>
+                        <div class="music-item-info choose-item-info">
+                            <h3 class="choose-info-title">Множество настроек
+                            </h3>
+                            <p class="choose-info-clue">
+                                Тонкая настройка анимации и эффектов для ваших фото
+                            </p>
+                            <button class="choose-btn btn-white">Создать видео</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="possibilities" class="other-functions-section big-container section">
+            <div class="container">
+                <div class="block-header  G-column-center">
+                    <div class=" block-title">Инструменты</div>
+                    <h2 class=" block-main-title">
+                        Другие функции Satellite AI <span class="text-wrap">для работы с видео</span>
+                    </h2>
+                    <div class="functions-btn-mobile G-center">
+                        <button class="btn-gradient">Попробовать</button>
+                    </div>
+                </div>
+                <div class="other-functions-items G-flex">
+                    <div style="background-image: url('assets/images/other-functions1.jpeg')"
+                         class="other-functions-item G-image">
+                        <a href="" class="other-functions-arrow G-flex">
+                            <img src="assets/images/ArrowButton.svg" alt="">
+                        </a>
+
+                        <div class="other-functions-texts">
+                            <h3 class="functions-text-title">Создать видео</h3>
+                            <p class="functions-text">Создавайте динамичные видео
+                                <span class="mobile-text-wrap">за считанные минуты! Нейросеть</span>
+                                объединит кадры, добавит
+                                переходы
+                                <span class="mobile-text-wrap">и сделает видео живым и ярким. Идеально</span>
+                                подходит для создания захватывающего
+                                визуального контента для соц сетей и видеооткрыток</p>
+                        </div>
+                    </div>
+                    <div style="background-image: url('assets/images/other-functions2.png')"
+                         class="other-functions-item G-image">
+
+                        <a href="" class="other-functions-arrow G-flex">
+                            <img src="assets/images/ArrowButton.svg" alt="">
+                        </a>
+
+                        <div class="other-functions-texts">
+                            <h3 class="functions-text-title">Face Swap видео</h3>
+                            <p class="functions-text">
+                                Хотите увидеть себя в новом образе?
+                                <span class="desktop-text-wrap">Face Swap мгновенно заменит лица в видео,</span>
+                                создавая
+                                забавные и оригинальные ролики. Подходит <span class="mobile-text-wrap">для развлечения и создания</span>
+                                запоминающегося
+                                контента
+                            </p>
+                        </div>
+
+                    </div>
+                    <div style="background-image: url('assets/images/other-functions3.jpeg')"
+                         class="other-functions-item G-image">
+
+                        <a href="" class="other-functions-arrow G-flex">
+                            <img src="assets/images/ArrowButton.svg" alt="">
+                        </a>
+
+                        <div class="other-functions-texts">
+                            <h3 class="functions-text-title">Создать видео с музыкой</h3>
+                            <p class="functions-text">
+                                Соедините визуальные образы с мелодией для передачи атмосферы. Нейросеть подберет ритм,
+                                добавит плавные переходы и создаст динамичное видео. Используйте для создания коротких
+                                клипов или праздничных открыток
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="functions-btn G-center">
+                    <button class="btn-gradient">Попробовать</button>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section id="forWhom" class="for-everyone big-container section ">
+            <div class="block-header  G-column-center">
+                <div class=" block-title">Кому подойдёт</div>
+                <h2 class="forWhom-face  block-main-title">
+                    Satellite AI — для всех, кто хочет <span class="desktop-text-wrap">создавать видео из фото с музыкой</span>
+                </h2>
+
+            </div>
+
+            <div class="for-everyone-list block-cnt G-align-center">
+                <div class="for-everyone-column G-flex-column">
+                    <div class="everyone-small-item G-flex">
+                        <img src="assets/images/everyoneCard1.png" alt="image">
+                    </div>
+                    <div class="everyone-small-item G-flex">
+                        <img src="assets/images/everyoneCard2.png" alt="image">
+                    </div>
+                </div>
+                <div class="for-everyone-column G-flex-column">
+                    <div class="everyone-big-item G-center">
+                        <img src="assets/images/everyoneCard3.png" alt="image">
+                    </div>
+
+                    <div class="everyone-big-item G-center">
+                        <img src="assets/images/everyoneCard4.png" alt="image">
+                    </div>
+                </div>
+                <div class="for-everyone-column G-flex-column">
+                    <div class="everyone-small-item G-flex">
+                        <img src="assets/images/everyoneCard5.png" alt="image">
+                    </div>
+                    <div class="everyone-small-item G-flex">
+                        <img src="assets/images/everyoneCard6.png" alt="image">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="everyone-card-right">
+                <div class="everyone-small-item G-flex">
+                    <img src="assets/images/everyoneCard8.png" alt="image">
+                </div>
+
+            </div>
+            <div class="everyone-card-left">
+                <div class="everyone-small-item G-flex">
+                    <img src="assets/images/everyoneCard7.png" alt="image">
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <section id="reviews" class="users-choose   section">
+            <div class="container">
+                <div class="block-header  G-column-center">
+                    <div class=" block-title">Отзывы</div>
+                    <h2 class="everyone-main-title block-main-title">
+                        Пользователи выбирают нас
+                    </h2>
+
+                </div>
+                <div class="users-choose-cnt G-justify-between">
+                    <div class="users-choose-picture G-image">
+                        <div class="apps">
+                            <img src="assets/images/Apps.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="users-column G-flex">
+                        <div class="users-img G-flex">
+                            <img src="assets/images/user1.png" alt="image">
+                        </div>
+                        <div class="users-img G-flex">
+                            <img src="assets/images/user2.jpeg" alt="image">
+                        </div>
+                        <div class="users-img G-flex">
+                            <img src="assets/images/user3.jpeg" alt="image">
+                        </div>
+                    </div>
+
+                    <div class="users-column G-flex">
+                        <div class="users-img G-flex">
+                            <img src="assets/images/user4.jpeg" alt="image">
+                        </div>
+                        <div class="users-img G-flex">
+                            <img src="assets/images/user5.jpeg" alt="image">
+                        </div>
+                        <div class="users-img G-flex">
+                            <img src="assets/images/user6.jpeg" alt="image">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="reviews-list G-flex">
+
+                    <div class="reviews-item">
+                        <div class="reviews-item-header">
+                            <div class="reviews-item-author G-justify-between">
+                                <h3 class="reviews-author-name">Алексей</h3>
+                                <div class="reviews-stars G-align-center">
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+
+                                </div>
+                            </div>
+                            <div class="reviews-item-clue G-justify-between">
+                                <div class="author-profession">маркетолог</div>
+                                <div class="author-profession">02 сентября</div>
+
+                            </div>
+                        </div>
+                        <div class="reviews-text">
+                            С помощью этой нейросети смог создать видео для презентации буквально за несколько минут!
+                            Отличный инструмент для тех, кто ценит время.
+                        </div>
+                    </div>
+                    <div class="reviews-item">
+                        <div class="reviews-item-header">
+                            <div class="reviews-item-author G-justify-between">
+                                <h3 class="reviews-author-name">Елена</h3>
+                                <div class="reviews-stars G-align-center">
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+
+                                </div>
+                            </div>
+                            <div class="reviews-item-clue G-justify-between">
+                                <div class="author-profession">графический дизайнер</div>
+                                <div class="author-profession">25 августа</div>
+
+                            </div>
+                        </div>
+                        <div class="reviews-text">
+                            Не ожидала, что создание видео может быть таким простым и быстрым. Satellite AI — просто
+                            находка!
+                        </div>
+                    </div>
+                    <div class="reviews-item">
+                        <div class="reviews-item-header">
+                            <div class="reviews-item-author G-justify-between">
+                                <h3 class="reviews-author-name">Игорь</h3>
+                                <div class="reviews-stars G-align-center">
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+
+                                </div>
+                            </div>
+                            <div class="reviews-item-clue G-justify-between">
+                                <div class="author-profession">PR-менеджер</div>
+                                <div class="author-profession">08 августа</div>
+
+                            </div>
+                        </div>
+                        <div class="reviews-text">
+                            Сделал потрясающее видео для соцсетей всего за пару кликов! Очень доволен результатом.
+                        </div>
+                    </div>
+
+                    <div data-val="open_row2" class="reviews-row-2 reviews-item">
+                        <div class="reviews-item-header">
+                            <div class="reviews-item-author G-justify-between">
+                                <h3 class="reviews-author-name">Марина</h3>
+                                <div class="reviews-stars G-align-center">
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+
+                                </div>
+                            </div>
+                            <div class="reviews-item-clue G-justify-between">
+                                <div class="author-profession">маркетолог</div>
+                                <div class="author-profession">28 июля</div>
+
+                            </div>
+                        </div>
+                        <div class="reviews-text">
+                            Нейросеть отлично подбирает эффекты и делает плавные переходы — видео выглядят
+                            профессионально. Рекомендую!
+
+                        </div>
+                    </div>
+                    <div data-val="open_row2" class="reviews-row-2 reviews-item">
+                        <div class="reviews-item-header">
+                            <div class="reviews-item-author G-justify-between">
+                                <h3 class="reviews-author-name">Дмитрий</h3>
+                                <div class="reviews-stars G-align-center">
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+
+                                </div>
+                            </div>
+                            <div class="reviews-item-clue G-justify-between">
+                                <div class="author-profession">графический дизайнер</div>
+                                <div class="author-profession">24 июля</div>
+
+                            </div>
+                        </div>
+                        <div class="reviews-text">
+                            Satellite AI сэкономил мне кучу времени! Видео получилось качественным и ярким, без лишних
+                            усилий.
+
+
+                        </div>
+                    </div>
+                    <div data-val="open_row2" class="reviews-row-2 reviews-item">
+                        <div class="reviews-item-header">
+                            <div class="reviews-item-author G-justify-between">
+                                <h3 class="reviews-author-name">Аннаm</h3>
+                                <div class="reviews-stars G-align-center">
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+
+                                </div>
+                            </div>
+                            <div class="reviews-item-clue G-justify-between">
+                                <div class="author-profession">PR-менеджер</div>
+                                <div class="author-profession">16 июля</div>
+
+                            </div>
+                        </div>
+                        <div class="reviews-text">
+                            Пользуюсь для создания видеооткрыток — очень удобно и быстро. Простой интерфейс и отличные
+                            возможности.
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="reviews-row-3 reviews-item">
+                        <div class="reviews-item-header">
+                            <div class="reviews-item-author G-justify-between">
+                                <h3 class="reviews-author-name">Виктор</h3>
+                                <div class="reviews-stars G-align-center">
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+
+                                </div>
+                            </div>
+                            <div class="reviews-item-clue G-justify-between">
+                                <div class="author-profession">маркетолог</div>
+                                <div class="author-profession">02 июля</div>
+
+                            </div>
+                        </div>
+                        <div class="reviews-text">
+                            Мне понравилось, что можно легко настроить стиль видео под себя. Отличный сервис для
+                            маркетологов!
+
+
+                        </div>
+                    </div>
+                    <div class="reviews-row-3 reviews-item">
+                        <div class="reviews-item-header">
+                            <div class="reviews-item-author G-justify-between">
+                                <h3 class="reviews-author-name">Ольга</h3>
+                                <div class="reviews-stars G-align-center">
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+
+                                </div>
+                            </div>
+                            <div class="reviews-item-clue G-justify-between">
+                                <div class="author-profession">графический дизайнер</div>
+                                <div class="author-profession">26 июля</div>
+
+                            </div>
+                        </div>
+                        <div class="reviews-text">
+                            Создала видео для своего блога за считанные минуты. Очень крутая функция добавления музыки и
+                            анимации!
+
+
+                        </div>
+                    </div>
+                    <div class="reviews-row-3 reviews-item">
+                        <div class="reviews-item-header">
+                            <div class="reviews-item-author G-justify-between">
+                                <h3 class="reviews-author-name">Роман</h3>
+                                <div class="reviews-stars G-align-center">
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+
+                                </div>
+                            </div>
+                            <div class="reviews-item-clue G-justify-between">
+                                <div class="author-profession">блогер, PR-менеджер</div>
+                                <div class="author-profession">21 июня</div>
+
+                            </div>
+                        </div>
+                        <div class="reviews-text">
+                            Идеальный инструмент для создания видео без навыков монтажа. Нейросеть делает всю работу за
+                            меня!
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="reviews-view G-center">
+                    <button class="reviews-btn btn-white G-align-center">
+                        <span>Показать еще</span>
+                        <i class="icon icon-arrowDown"></i>
+                    </button>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section id="faq" class="faq-section section">
+            <div class="container">
+                <div class="block-header  G-column-center">
+                    <div class=" block-title">FAQ</div>
+                    <h2 class="everyone-main-title block-main-title">
+                        Часто задаваемые вопросы
+                    </h2>
+
+                </div>
+                <div class="faq-content  G-flex-column">
+                    <div class="often-asks-item">
+                        <div class="asks-item-header G-justify-between">
+                            <p> Как быстро создается видео?</p>
+                            <div class="asks-list-icon G-center"></div>
+                        </div>
+                        <div class="asks-list-sub">
+                            Нейросеть Assistant AI генерирует видео за считанные минуты, в зависимости от сложности
+                            проекта и объема данных.
+                        </div>
+                    </div>
+                    <div class="often-asks-item">
+                        <div class="asks-item-header G-justify-between">
+                            <p> Какие форматы файлов <span class="mobile-text-wrap">поддерживаются для </span> загрузки
+                                фото и видео?</p>
+                            <div class="asks-list-icon G-center"></div>
+                        </div>
+                        <div class="asks-list-sub">
+                            Мы поддерживаем большинство популярных форматов: JPEG, PNG для фото, MP4 и MOV для видео.
+                        </div>
+                    </div>
+
+                    <div class="often-asks-item">
+                        <div class="asks-item-header G-justify-between">
+                            <p>Можно ли добавить музыку из моей библиотеки?</p>
+                            <div class="asks-list-icon G-center"></div>
+                        </div>
+                        <div class="asks-list-sub">
+                            Да, вы можете загружать собственные аудиофайлы в форматах MP3, WAV и других популярных
+                            форматах.
+                        </div>
+                    </div>
+                    <div class="often-asks-item">
+                        <div class="asks-item-header G-justify-between">
+                            <p>Какие эффекты можно добавить в видео</p>
+                            <div class="asks-list-icon G-center"></div>
+                        </div>
+                        <div class="asks-list-sub">
+                            Вы можете добавить переходы, анимации, текстовые вставки и многие другие визуальные эффекты,
+                            чтобы сделать видео более динамичным и интересным
+                        </div>
+                    </div>
+
+                    <div class="often-asks-item">
+                        <div class="asks-item-header G-justify-between">
+                            <p>Могу ли я изменить лица на видео (Face Swap)?</p>
+                            <div class="asks-list-icon G-center"></div>
+                        </div>
+                        <div class="asks-list-sub">
+                            Да, наша функция Face Swap позволяет легко заменить лица на видео, создавая креативные и
+                            забавные ролики.
+                        </div>
+                    </div>
+                    <div class="often-asks-item">
+                        <div class="asks-item-header G-justify-between">
+                            <p>Сохраняется ли качество фото и видео при обработке?</p>
+                            <div class="asks-list-icon G-center"></div>
+                        </div>
+                        <div class="asks-list-sub">
+                            Да, мы сохраняем оригинальное качество загружаемых фото и видео, обеспечивая высокое
+                            разрешение в итоговом ролике.
+                        </div>
+                    </div>
+                    <div class="often-asks-item">
+                        <div class="asks-item-header G-justify-between">
+                            <p>Можно ли использовать нейросеть для создания длинных видеороликов?</p>
+                            <div class="asks-list-icon G-center"></div>
+                        </div>
+                        <div class="asks-list-sub">
+                            Конечно! Assistant AI справляется как с короткими роликами, так и с более длительными видео,
+                            адаптируясь под ваши потребности.
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-body G-justify-between">
+                <a class="footer-logo" href="audioText.html">
+                    <img src="assets/images/logo.svg" alt="">
+                </a>
+                <nav class="footer-menu">
+                    <ul class="footer-menu-list G-flex">
+                        <li>
+                            <a href="#possibilities">Возможности</a>
+                        </li>
+                        <li>
+                            <a href="#forWhom">Для кого</a>
+                        </li>
+                        <li>
+                            <a href="#reviews">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#faq">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button class="btn-white footer-btn">Регистрация</button>
+
+            </div>
+            <div class="footer-clue ">
+                <span>© 2024 Satellite AI.</span>
+                <span> Все права защищены</span>
+            </div>
+        </div>
+    </footer>
+
+</div>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+<script src="assets/js/index.js"></script>
+</body>
+</html>
